@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Grid System</title>
+#copy and paste bootstrap lines
+</head>
+<style>
+    .row{
+        border: 2px blue solid;
+    }
+    #cd1{
+        border: 2px red solid;
+    }
+    #cd2{
+        border: 2px green solid;
+    }
+    #cd3{
+        border: 2px deeppink solid;
+    }
+    #row2{
+        background-color: orchid;
+    }
+    #cd4{
+        background-color: gray;
+    }
+    #row3{
+        background-color: cyan;
+    }
+</style>
+
+<body>
+<center><h1>Grid System</h1></center>
+<div class="container">
+    <div class="row" id="row1">
+        <div class="col-md-4" id="cd1">
+            <h1 class="bg-success text-center text-white">Python</h1>
+            1. Simple and Easy<br>
+            2. Powerful Language<br>
+            3. Open and Free Source<br>
+            4. Extendable and Portable<br>
+            5. Brings tons of Packages<br>
+        </div>
+        <div class="col-md-4" id="cd2">
+            <h1 class="bg-success text-center text-white">Django</h1>
+            1. Its Python Framework<br>
+            2. Creates Dynamic Websites<br>
+            3. Follows MVT Architecture<br>
+            4. Brings default Database<br>
+            5. Verstile and Scalable<br>
+        </div>
+        <div class="col-md-4" id="cd3">
+            <h1 class="bg-success text-center text-white">UI Technologies</h1>
+            1. Creates FrontEnd of Website<br>
+            2. Applies styles and Layouts<br>
+            3. HTML, CSS, Bootstrap, Javascript..<br>
+            4. Html decides structure of page<br>
+            5. Javascripts adds dynamic interactivity.<br>
+        </div>
+    </div>
+
+
+    <div class="row" id="row2">
+        <div class="offset-md-2 col-md-8" id="cd4">
+            <p>Python is simple language and Django is framework of Python language, Python is simple langauge and Django is framework of Python language, Python is simple langauge and Django is framework of Python language, Python is simple langauge and Django is framework of Python language <br> </p>
+        </div>
+    </div>
+
+    <div class="row" id="row3">
+        <div class="offset-md-3 col-md-6">
+            <h1>Please enter your details</h1>
+            <center>
+            <form method="POST">
+                {% csrf_token %}
+                <label>Name: &nbsp; &nbsp; </label>
+                <input type="text" name="name"><br>
+
+                <label>Number: </label>
+                <input type="number" name="mob"><br>
+
+                <label>Email: &nbsp; &nbsp;</label>
+                <input type="email" name="email"><br>
+
+                <center>
+                <input type="submit" value="Submit" class="btn btn-success ">
+                <input type="reset" value="Clear" class="btn btn-danger">
+                    </center>
+            </form>
+        </center>
+        </div>
+    </div>
+</div>
+</body>
+</html>
